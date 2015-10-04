@@ -1,0 +1,12 @@
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\bin\Debug\Game.exe.config
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\bin\Debug\Game.exe
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\bin\Debug\Game.pdb
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.Properties.Resources.resources
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.csproj.GenerateResource.Cache
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.exe
+c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.pdb
+C:\Users\Alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.Game.resources
+C:\Users\orion\Documents\Visual Studio 2013\Projects\Fundamental Level\AdvancedCSharp_2015Sept\game\Game\Game\bin\Debug\Game.exe.config
+C:\Users\orion\Documents\Visual Studio 2013\Projects\Fundamental Level\AdvancedCSharp_2015Sept\game\Game\Game\obj\Debug\Game.exe
+C:\Users\orion\Documents\Visual Studio 2013\Projects\Fundamental Level\AdvancedCSharp_2015Sept\game\Game\Game\obj\Debug\Game.pdb
