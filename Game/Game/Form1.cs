@@ -152,23 +152,23 @@ namespace Game
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right) //left arrow key = move left
             {
                 right = true;
             }
 
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left)  //right arrow key = move right
             {
 
                 left = true;
             }
 
-            if (e.KeyCode == Keys.Escape)
+            if (e.KeyCode == Keys.Escape) //escape key = exit game
             {
                 this.Close();
             }
 
-            if (jump != true)
+            if (jump != true) // space key = jump
             {
                 if (e.KeyCode == Keys.Space)
                 {
