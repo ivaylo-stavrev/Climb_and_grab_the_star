@@ -22,6 +22,9 @@ namespace Game
         bool check2 = true;
         bool check3 = false;
         bool check4 = true;
+        bool check_guy1 = false;
+        bool check_catched = false;
+        
 
         public Game()
         {
@@ -30,7 +33,10 @@ namespace Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            if (check_catched)
+            {
+                //this.Dispose(); // FIXME: This was the only way to stop the game if hit the bad_guy 
+            }
 
             if (right == true) //moving right
             {
@@ -79,12 +85,13 @@ namespace Game
             physics(block2);
             physics(block3);
             physics(block4);
+            physics(bad_guy);
 
             //block0 movement and wall collision
             if (block0.Right > screen.Right) { block0.Left = screen.Width - block0.Width; check0 = false; }
             if (block0.Left < screen.Left) { block0.Left = screen.Left; check0 = true; }
-            if (check0 == true) { block0.Left += 3; if (player.Bottom == block0.Top) { player.Left += 3; } }
-            else { block0.Left -= 3; if (player.Bottom == block0.Top) { player.Left -= 3; } }
+            if (check0 == true) { block0.Left += 0; if (player.Bottom == block0.Top) { player.Left += 0; } }
+            else { block0.Left -= 0; if (player.Bottom == block0.Top) { player.Left -= 0; } }
             //block1 movement and wall collision
             if (block1.Right > screen.Right) { block1.Left = screen.Width - block1.Width; check1 = false; }
             if (block1.Left < screen.Left) { block1.Left = screen.Left; check1 = true; }
@@ -105,12 +112,17 @@ namespace Game
             if (block4.Left < screen.Left) { block4.Left = screen.Left; check4 = true; }
             if (check4 == true) { block4.Left += 9; if (player.Bottom == block4.Top) { player.Left += 9; } }
             else { block4.Left -= 9; if (player.Bottom == block4.Top) { player.Left -= 9; } }
+            //bad_guy movement and wall collision
+            if (bad_guy.Right > block0.Right) { bad_guy.Left = block0.Right - bad_guy.Width; check_guy1 = false; }
+            if (bad_guy.Left < block0.Left) { bad_guy.Left = block0.Left; check_guy1 = true; }
+            if (check_guy1 == true) { bad_guy.Left += 2; if (player.Bottom == bad_guy.Top) { player.Left += 2; } }
+            else { bad_guy.Left -= 2; if (player.Bottom == bad_guy.Top) { player.Left -= 2; } }
         }
 
 
-     
-   
-        public void physics (System.Windows.Forms.PictureBox block)
+
+
+        public void physics(System.Windows.Forms.PictureBox block)
         {
             //side collision
             //if (player.Right > block.Left && player.Left < block.Right - player.Width && player.Bottom < block.Bottom && player.Bottom > block.Top)
@@ -122,6 +134,20 @@ namespace Game
             //{
             //    left = false;
             //}
+
+            //side collision bad_guy
+            // FIXME: I didn't understand why the player is passing through the bad_guy and only hits him in the upper half of the figure?!?
+            if (player.Right > bad_guy.Left && player.Left < bad_guy.Right - player.Width && player.Bottom < bad_guy.Bottom && player.Bottom > bad_guy.Top)
+            {
+                right = false;
+                check_catched = true; // FIXME: maybe exeption should be added?!?
+            }
+
+            if (player.Left < bad_guy.Right && player.Right > bad_guy.Left + player.Width && player.Bottom < bad_guy.Bottom && player.Bottom > bad_guy.Top)
+            {
+                left = false;
+                check_catched = true; // FIXME: maybe exeption should be added?!?
+            }
 
 
             // top collision 
@@ -152,23 +178,23 @@ namespace Game
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Right) //left arrow key = move left
+            if (e.KeyCode == Keys.Right)
             {
                 right = true;
             }
 
-            if (e.KeyCode == Keys.Left)  //right arrow key = move right
+            if (e.KeyCode == Keys.Left)
             {
 
                 left = true;
             }
 
-            if (e.KeyCode == Keys.Escape) //escape key = exit game
+            if (e.KeyCode == Keys.Escape)
             {
                 this.Close();
             }
 
-            if (jump != true) // space key = jump
+            if (jump != true)
             {
                 if (e.KeyCode == Keys.Space)
                 {

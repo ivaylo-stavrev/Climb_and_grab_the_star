@@ -36,6 +36,7 @@
             this.block2 = new System.Windows.Forms.PictureBox();
             this.block1 = new System.Windows.Forms.PictureBox();
             this.block0 = new System.Windows.Forms.PictureBox();
+            this.bad_guy = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -45,6 +46,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.block2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.block1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.block0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bad_guy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +60,7 @@
             this.screen.Controls.Add(this.block2);
             this.screen.Controls.Add(this.block1);
             this.screen.Controls.Add(this.block0);
+            this.screen.Controls.Add(this.bad_guy);
             this.screen.Controls.Add(this.player);
             this.screen.Controls.Add(this.pictureBox2);
             this.screen.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -113,13 +116,21 @@
             // block0
             // 
             this.block0.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.block0.BackColor = System.Drawing.Color.Red;
-            this.block0.Image = global::Game.Properties.Resources._0;
+            this.block0.BackColor = System.Drawing.Color.Gold;
             this.block0.Location = new System.Drawing.Point(250, 625);
             this.block0.Name = "block0";
-            this.block0.Size = new System.Drawing.Size(175, 15);
+            this.block0.Size = new System.Drawing.Size(500, 15);
             this.block0.TabIndex = 1;
-            this.block0.TabStop = false;
+            // 
+            // bad_guy
+            // 
+            this.bad_guy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bad_guy.BackColor = System.Drawing.Color.Red;
+            this.bad_guy.Location = new System.Drawing.Point(400, 560);
+            this.bad_guy.Name = "bad_guy";
+            this.bad_guy.Size = new System.Drawing.Size(25, 65);
+            this.bad_guy.TabIndex = 0;
+            this.bad_guy.TabStop = false;
             // 
             // player
             // 
@@ -133,7 +144,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
@@ -166,6 +177,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.block2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.block1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.block0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bad_guy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -176,6 +188,7 @@
 
         private System.Windows.Forms.Panel screen;
         private System.Windows.Forms.PictureBox player;
+        private System.Windows.Forms.PictureBox bad_guy;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox block0;
         private System.Windows.Forms.PictureBox block3;
