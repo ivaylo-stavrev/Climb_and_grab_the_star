@@ -110,36 +110,177 @@ namespace Game
             physics(block2);
             physics(block3);
             physics(block4);
-
+            
             //block0 movement and wall collision
-            if (block0.Right > screen.Right) { block0.Left = screen.Width - block0.Width; check0 = false; }
-            if (block0.Left < screen.Left) { block0.Left = screen.Left; check0 = true; }
-            if (check0 == true) { block0.Left += 2; if (player.Bottom == block0.Top) { player.Left += 2; bad_guy.Left += 2; } }
-            else { block0.Left -= 2; if (player.Bottom == block0.Top) { player.Left -= 2; bad_guy.Left -= 2; } }
+            if (block0.Right > screen.Right)
+            { 
+                block0.Left = screen.Width - block0.Width;
+                check0 = false;
+            }
+            if (block0.Left < screen.Left) 
+            { 
+                block0.Left = screen.Left; 
+                check0 = true; 
+            }
+            if (check0 == true) 
+            { 
+                block0.Left += 2; 
+                if (player.Bottom == block0.Top) 
+                { 
+                    player.Left += 2; 
+                    bad_guy.Left += 2; 
+                } 
+            }
+            else 
+            { 
+                block0.Left -= 2; 
+                if (player.Bottom == block0.Top) 
+                { 
+                    player.Left -= 2; 
+                    bad_guy.Left -= 2; 
+                } 
+            }
+
             //block1 movement and wall collision
-            if (block1.Right > screen.Right) { block1.Left = screen.Width - block1.Width; check1 = false; }
-            if (block1.Left < screen.Left) { block1.Left = screen.Left; check1 = true; }
-            if (check1 == true) { block1.Left += (2 + platformSpeed1); if (player.Bottom == block1.Top) { player.Left += (2 + platformSpeed1); } }
-            else { block1.Left -= (2 + platformSpeed1); if (player.Bottom == block1.Top) { player.Left -= (2 + platformSpeed1); } }
+            if (block1.Right > screen.Right) 
+            { 
+                block1.Left = screen.Width - block1.Width; 
+                check1 = false; 
+            }
+
+            if (block1.Left < screen.Left) 
+            { 
+                block1.Left = screen.Left; 
+                check1 = true; 
+            }
+
+            if (check1 == true) 
+            { 
+                block1.Left += (2 + platformSpeed1); 
+                if (player.Bottom == block1.Top) 
+                { 
+                    player.Left += (2 + platformSpeed1); 
+                } 
+            }
+
+            else 
+            { 
+                block1.Left -= (2 + platformSpeed1); 
+                if (player.Bottom == block1.Top) 
+                { 
+                    player.Left -= (2 + platformSpeed1); 
+                } 
+            }
+            
             //block2 movement and wall collision
-            if (block2.Right > screen.Right) { block2.Left = screen.Width - block2.Width; check2 = false; }
-            if (block2.Left < screen.Left) { block2.Left = screen.Left; check2 = true; }
-            if (check2 == true) { block2.Left += (3 + platformSpeed2); if (player.Bottom == block2.Top) { player.Left += (3 + platformSpeed2); } }
-            else { block2.Left -= (3 + platformSpeed2); if (player.Bottom == block2.Top) { player.Left -= (3 + platformSpeed2); } }
+            if (block2.Right > screen.Right) 
+            { 
+                block2.Left = screen.Width - block2.Width; 
+                check2 = false; 
+            }
+
+            if (block2.Left < screen.Left) 
+            { 
+                block2.Left = screen.Left; 
+                check2 = true; 
+            }
+
+            if (check2 == true) 
+            { 
+                block2.Left += (3 + platformSpeed2); 
+                if (player.Bottom == block2.Top) 
+                { 
+                    player.Left += (3 + platformSpeed2);
+                }
+            }
+
+            else 
+            { 
+                block2.Left -= (3 + platformSpeed2); 
+                if (player.Bottom == block2.Top) 
+                { 
+                    player.Left -= (3 + platformSpeed2); 
+                } 
+            }
+
             //block3 movement and wall collision
-            if (block3.Right > screen.Right) { block3.Left = screen.Width - block3.Width; check3 = false; }
-            if (block3.Left < screen.Left) { block3.Left = screen.Left; check3 = true; }
-            if (check3 == true) { block3.Left += (4 + platformSpeed1); if (player.Bottom == block3.Top) { player.Left += (4 + platformSpeed1); } }
-            else { block3.Left -= (4 + platformSpeed1); if (player.Bottom == block3.Top) { player.Left -= (4 + platformSpeed1); } }
+            if (block3.Right > screen.Right) 
+            { 
+                block3.Left = screen.Width - block3.Width; 
+                check3 = false; 
+            }
+
+            if (block3.Left < screen.Left) 
+            { 
+                block3.Left = screen.Left; 
+                check3 = true; 
+            }
+
+            if (check3 == true) 
+            { 
+                block3.Left += (4 + platformSpeed1); 
+                if (player.Bottom == block3.Top) 
+                { 
+                    player.Left += (4 + platformSpeed1); 
+                } 
+            }
+
+            else 
+            { 
+                block3.Left -= (4 + platformSpeed1); 
+                if (player.Bottom == block3.Top) 
+                { 
+                    player.Left -= (4 + platformSpeed1); 
+                } 
+            }
+
             //block4 movement and wall collision
-            if (block4.Right > screen.Right) { block4.Left = screen.Width - block4.Width; check4 = false; }
-            if (block4.Left < screen.Left) { block4.Left = screen.Left; check4 = true; }
-            if (check4 == true) { block4.Left += (5 + platformSpeed2); if (player.Bottom == block4.Top) { player.Left += (5 + platformSpeed2); } }
-            else { block4.Left -= (5 + platformSpeed2); if (player.Bottom == block4.Top) { player.Left -= (5 + platformSpeed2); } }
+            if (block4.Right > screen.Right) 
+            { 
+                block4.Left = screen.Width - block4.Width; 
+                check4 = false; 
+            }
+
+            if (block4.Left < screen.Left) 
+            { 
+                block4.Left = screen.Left; 
+                check4 = true; 
+            }
+
+            if (check4 == true) 
+            { 
+                block4.Left += (5 + platformSpeed2); 
+                if (player.Bottom == block4.Top) 
+                { 
+                    player.Left += (5 + platformSpeed2); 
+                } 
+            }
+
+            else 
+            { 
+                block4.Left -= (5 + platformSpeed2); 
+                if (player.Bottom == block4.Top) 
+                { 
+                    player.Left -= (5 + platformSpeed2); 
+                } 
+            }
+
             //bad_guy movement and wall collision
-            if (bad_guy.Right > block0.Right) { bad_guy.Left = block0.Right - bad_guy.Width; check_guy1 = false; bad_guy.Image = Image.FromFile("bigbadleft.gif"); }
-            if (bad_guy.Left < block0.Left) { bad_guy.Left = block0.Left; check_guy1 = true; bad_guy.Image = Image.FromFile("bigbadright.gif"); }
+            if (bad_guy.Right > block0.Right) 
+            { 
+                bad_guy.Left = block0.Right - bad_guy.Width; 
+                check_guy1 = false; 
+                bad_guy.Image = Image.FromFile("bigbadleft.gif"); 
+            }
+            if (bad_guy.Left < block0.Left) 
+            { 
+                bad_guy.Left = block0.Left; 
+                check_guy1 = true; 
+                bad_guy.Image = Image.FromFile("bigbadright.gif"); 
+            }
+
             if (check_guy1 == true) { bad_guy.Left += 4; }
+
             else { bad_guy.Left -= 4; }
 
             //collision with bad_guy (game over)
@@ -153,8 +294,7 @@ namespace Game
 
                 check_catched = true;
             }
-            //
-
+            
             //collision with star (win)
             if (player.Right > Star.Left && player.Left < Star.Right - player.Width && player.Bottom < Star.Bottom && player.Bottom > Star.Top)
             {
