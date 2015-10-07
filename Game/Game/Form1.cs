@@ -69,7 +69,7 @@ namespace Game
                 points++;
                 score.Text = "Score = " + points;
                 if (platformSpeed1 < 6) { platformSpeed1++; }
-                if (points > 4 && points < 12) { platformSpeed2++; }
+                if (points < 12) { platformSpeed2++; }
                 check_win = false;
             }
 
