@@ -7,3 +7,12 @@ c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.csp
 c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.exe
 c:\users\alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.pdb
 C:\Users\Alex\documents\visual studio 2013\Projects\Game\Game\obj\Debug\Game.Game.resources
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\bin\Debug\Game.exe.config
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\obj\Debug\Game.exe
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\obj\Debug\Game.pdb
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\bin\Debug\Game.exe
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\bin\Debug\Game.pdb
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\obj\Debug\Game.Game.resources
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\obj\Debug\Game.Properties.Resources.resources
+C:\Users\Alex\Documents\GitHub\Climb_and_grab_the_star\Game\Game\obj\Debug\Game.csproj.GenerateResource.Cache
