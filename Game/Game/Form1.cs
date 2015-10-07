@@ -30,6 +30,17 @@ namespace Game
         bool check_win = false;
         bool glitch = false;
 
+        protected override CreateParams CreateParams // this activates DB and removes flickering and tearing!
+        {
+            get
+            {
+                // Activate double buffering at the form level.  All child controls will be double buffered as well.
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED
+                return cp;
+            }
+        } 
+
         public Game()
         {
             InitializeComponent();
