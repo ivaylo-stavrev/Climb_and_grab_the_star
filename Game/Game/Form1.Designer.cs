@@ -59,9 +59,9 @@
             // 
             this.screen.BackColor = System.Drawing.Color.Transparent;
             this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.screen.Controls.Add(this.controls);
             this.screen.Controls.Add(this.Star);
             this.screen.Controls.Add(this.player);
+            this.screen.Controls.Add(this.controls);
             this.screen.Controls.Add(this.score);
             this.screen.Controls.Add(this.block4);
             this.screen.Controls.Add(this.block3);
@@ -89,6 +89,7 @@
             // 
             // Star
             // 
+            this.Star.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Star.Image = ((System.Drawing.Image)(resources.GetObject("Star.Image")));
             this.Star.Location = new System.Drawing.Point(584, 10);
             this.Star.Name = "Star";
@@ -100,6 +101,7 @@
             // 
             this.player.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
             this.player.Location = new System.Drawing.Point(262, 627);
             this.player.Name = "player";
@@ -120,7 +122,8 @@
             // block4
             // 
             this.block4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.block4.BackColor = System.Drawing.Color.Red;
+            this.block4.BackColor = System.Drawing.Color.Transparent;
+            this.block4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.block4.Image = global::Game.Properties.Resources._4;
             this.block4.Location = new System.Drawing.Point(588, 150);
             this.block4.Name = "block4";
@@ -131,7 +134,8 @@
             // block3
             // 
             this.block3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.block3.BackColor = System.Drawing.Color.Red;
+            this.block3.BackColor = System.Drawing.Color.Transparent;
+            this.block3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.block3.Image = global::Game.Properties.Resources._3;
             this.block3.Location = new System.Drawing.Point(838, 250);
             this.block3.Name = "block3";
@@ -142,7 +146,8 @@
             // block2
             // 
             this.block2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.block2.BackColor = System.Drawing.Color.Red;
+            this.block2.BackColor = System.Drawing.Color.Transparent;
+            this.block2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.block2.Image = global::Game.Properties.Resources._2;
             this.block2.Location = new System.Drawing.Point(238, 350);
             this.block2.Name = "block2";
@@ -153,7 +158,8 @@
             // block1
             // 
             this.block1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.block1.BackColor = System.Drawing.Color.Red;
+            this.block1.BackColor = System.Drawing.Color.Transparent;
+            this.block1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.block1.Image = global::Game.Properties.Resources._1;
             this.block1.Location = new System.Drawing.Point(688, 450);
             this.block1.Name = "block1";
@@ -164,7 +170,8 @@
             // block0
             // 
             this.block0.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.block0.BackColor = System.Drawing.Color.Gold;
+            this.block0.BackColor = System.Drawing.Color.Transparent;
+            this.block0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.block0.Image = global::Game.Properties.Resources._0;
             this.block0.Location = new System.Drawing.Point(338, 560);
             this.block0.Name = "block0";
@@ -176,6 +183,7 @@
             // 
             this.bad_guy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bad_guy.BackColor = System.Drawing.Color.Transparent;
+            this.bad_guy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bad_guy.Image = ((System.Drawing.Image)(resources.GetObject("bad_guy.Image")));
             this.bad_guy.Location = new System.Drawing.Point(490, 482);
             this.bad_guy.Name = "bad_guy";
@@ -209,7 +217,7 @@
             this.MinimizeBox = false;
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Game";
+            this.Text = "Jumping Dude";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.screen.ResumeLayout(false);

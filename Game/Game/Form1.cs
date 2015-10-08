@@ -12,10 +12,10 @@ namespace Game
 {
     public partial class Game : Form
     {
-        System.Media.SoundPlayer backgroundSound = new System.Media.SoundPlayer();
-        
+        System.Media.SoundPlayer backgroundSound = new System.Media.SoundPlayer();     
         System.Media.SoundPlayer win = new System.Media.SoundPlayer();
         System.Media.SoundPlayer gameOver = new System.Media.SoundPlayer();
+
         bool right;
         bool left;
         bool jump;
@@ -58,8 +58,6 @@ namespace Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-
             //player textures
             if (left == false && right == false && jump == false) { player.Image = Image.FromFile("stand.png"); } //standing 
             if (left == true && jump == true) { player.Image = Image.FromFile("jumpleft.png"); } //jumping to the left side
@@ -74,6 +72,8 @@ namespace Game
                 backgroundSound.Stop();
                 gameOver.Play();
                 GameOver.Visible = true;
+                player.Enabled = false;
+                bad_guy.Enabled = false;
 
             }
 
