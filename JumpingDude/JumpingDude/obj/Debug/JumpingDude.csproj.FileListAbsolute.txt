@@ -1,9 +1,0 @@
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\bin\Debug\JumpingDude.exe.config
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\obj\Debug\JumpingDude.csprojResolveAssemblyReference.cache
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\obj\Debug\JumpingDude.Form1.resources
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\obj\Debug\JumpingDude.Properties.Resources.resources
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\obj\Debug\JumpingDude.csproj.GenerateResource.Cache
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\bin\Debug\JumpingDude.exe
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\bin\Debug\JumpingDude.pdb
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\obj\Debug\JumpingDude.exe
-C:\Users\Mirela\Documents\Visual Studio 2015\Projects\AdvancedCSharp-Exam19July2015\JumpingDude\JumpingDude\obj\Debug\JumpingDude.pdb
