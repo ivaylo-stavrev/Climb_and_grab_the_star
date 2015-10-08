@@ -12,6 +12,10 @@ namespace Game
 {
     public partial class Game : Form
     {
+        System.Media.SoundPlayer backgroundSound = new System.Media.SoundPlayer();
+        
+        System.Media.SoundPlayer win = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer gameOver = new System.Media.SoundPlayer();
         bool right;
         bool left;
         bool jump;
@@ -43,12 +47,19 @@ namespace Game
 
         public Game()
         {
+
             InitializeComponent();
+            backgroundSound.SoundLocation = "BackgroundSound.wav";
+            win.SoundLocation = "GettingTheStar.wav";
+            gameOver.SoundLocation = "GameOver.wav";
+            backgroundSound.Play();
             score.Text = "Score = " + points;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+
             //player textures
             if (left == false && right == false && jump == false) { player.Image = Image.FromFile("stand.png"); } //standing 
             if (left == true && jump == true) { player.Image = Image.FromFile("jumpleft.png"); } //jumping to the left side
@@ -60,17 +71,24 @@ namespace Game
             if (check_catched == true) //game over (when in contact with badGuy
             {
                 timer1.Stop();
+                backgroundSound.Stop();
+                gameOver.Play();
                 GameOver.Visible = true;
+
             }
 
             if (check_win == true)
             {
+                backgroundSound.Stop();
+                win.Play();
+                System.Threading.Thread.Sleep(900);
                 player.Top = screen.Height - player.Height;
                 points++;
                 score.Text = "Score = " + points;
                 if (platformSpeed1 < 6) { platformSpeed1++; }
                 if (points < 12) { platformSpeed2++; }
                 check_win = false;
+                backgroundSound.Play();
             }
 
 
